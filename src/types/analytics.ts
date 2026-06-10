@@ -1,0 +1,24 @@
+export type ClientAnalyticsSummary = {
+  client_id: string;
+  client_name: string;
+  whatsapp: string | null;
+  instagram: string | null;
+  reports_count: number;
+  measurements_count: number;
+  plans_count: number;
+  payments_count: number;
+  first_body_weight: number | null;
+  last_body_weight: number | null;
+  body_weight_change: number | null;
+  first_waist: number | null;
+  last_waist: number | null;
+  waist_change: number | null;
+  avg_pain_level: number | null;
+  avg_energy_level: number | null;
+  workout_done_count: number;
+  workout_partial_count: number;
+  workout_missed_count: number;
+  completion_rate: number | null;
+  last_report_date: string | null;
+  last_measurement_date: string | null;
+};

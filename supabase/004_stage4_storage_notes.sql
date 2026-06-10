@@ -1,0 +1,11 @@
+-- Supabase Storage bucket для фото упражнений:
+-- 1. Откройте Supabase Dashboard.
+-- 2. Storage -> New bucket.
+-- 3. Name: exercise-images
+-- 4. Public bucket: ON для MVP.
+-- 5. Save.
+--
+-- Если хотите создать bucket через SQL, используйте только при наличии прав:
+-- INSERT INTO storage.buckets (id, name, public)
+-- VALUES ('exercise-images', 'exercise-images', true)
+-- ON CONFLICT (id) DO UPDATE SET public = true;
